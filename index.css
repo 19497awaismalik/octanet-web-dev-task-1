@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..500;1,100..700&family=Pacifico&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    
+}
+.navbar{
+    width: 100%;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+}
+.logo{
+    display: flex;
+    width: 50%;
+
+}
+.logo h1{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin:0px 20px 0px 100px;
+    cursor: pointer;
+    color: orange;
+    
+}
+.logo select{
+    margin-left: 50px;
+    font: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+ select option{
+    width: 200px !important;
+    
+    padding: 5px !important;
+    background-color: black;
+    color: white;
+ }
+.input-button{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.input-button input{
+    width: 50%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: white;
+    border-radius: 5px;
+    padding:0px 0px 0px 15px ;
+    margin-right:20px ;
+    font-size: 15px;
+    position: relative;
+    
+}
+.input-button .fas{
+    position: absolute;
+    right:240px ;
+    font-size: 20px;
+    cursor: pointer;
+    color: orange;
+}
+
+.input-button button{
+    width: 20%;
+    height: 50px;
+    margin-right:50px ;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:15px ;
+    border: none;
+}
+.input-button button:hover{
+    background-color:transparent ;
+    color: white;
+    border: 2px solid orange;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    
+}
+.hero .hero-text{
+
+    width: 50%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-text h1{
+    width: 60%;
+    padding: 2px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+.hero-text p{
+    width: 60%;
+    padding: 2px;
+}
+.hero-text .button{
+    margin-top: 10px;
+    width: 60%;
+}
+.button button{
+    width: 150px;
+    height: 40px;
+    letter-spacing: 1px;
+    color: white;
+    background:orange;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon{
+    display: none !important;
+}
+.button button:hover{
+    background-color:transparent ;
+    color: black;
+    border: 2px solid orange;
+}
+.hero .hero-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img{
+    width: 500px;
+    object-fit: cover;
+}
+.sider-bar .sider-bar-heading{
+    display: none;
+}
+.input{
+    display: none;
+}
+.mobile-button {
+    display: none;
+}
+.poster{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /* margin:0px auto ; */
+    border-radius: 5px;
+    justify-content:space-around;
+    align-items: center;
+    background-color: orange;
+    color: white;
+}
+.poster .fas{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.content-heading{
+    width: 25%;
+    display: flex;
+    justify-content: end !important;
+    align-items: end;
+    margin-left: 100px !important   ;
+    letter-spacing: 1px;
+}
+.content-heading h1{
+    margin: 10px;
+}
+.content-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; 
+}  .content-text ol li{
+    margin: 10px;
+}
+.courses{
+    margin-top: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.courses h1{
+    margin: 30px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.course-button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid red; */
+}
+.course-button .see-all{
+    color: white;
+    font-size:16px ;
+    display: flex !important;
+    justify-content: end !important;
+    cursor: pointer;
+    position: relative;
+    letter-spacing:2px ;
+}
+
+.see-all::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+    transform: translateX(-100%);
+    opacity: 0;
+    bottom: -5px;
+}
+.see-all:hover::before {
+    width: 100%;
+transform: translateX(0%);
+opacity: 1;
+}
+.courses button{
+    height: 50px;
+    padding:3px;
+    margin:20px ;
+    padding: 0px 20px !important;
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: white;
+    font-size:16px ;
+    cursor: pointer;
+}
+.courses button:hover{
+    width: auto;
+    background-color: orange;
+    border: 2px solid black;
+}
+.course-card{
+    width:100% ;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    z-index: 999;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.student-time{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.card h3{
+    margin-top:10px ;
+    margin-left:30px ;
+}
+.heading1{
+    margin-bottom:100px !important ;
+}
+.review{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.review-card{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* border: 1px solid blue; */
+    box-shadow: 8px 10px 20px rgba(0,0,0,0.5) !important;
+    border-radius: 10px ;
+    box-shadow: 3px 3px 5px white;
+    padding: 30px 10px;
+    margin-right:10px ;
+    flex-direction: column;
+    margin-top: 50px;
+    z-index: 1000;
+}
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction:column ;
+}
+.fa-star{
+    color: orange !important;
+    margin-right: 2px;
+}
+.review-card img{
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    margin:10px ;
+    cursor: pointer;
+
+}
+.name-image{
+    display: flex;
+    align-items: center;
+}
+footer {
+    background-color: #FFA500; /* Orange background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.footer-content p {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-content .socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content .socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content .socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+@media (max-width:500px){
+    .navbar .logo{
+        width: 100%;
+        display: flex;
+    }
+    .logo h1{
+        font-size:20px ;
+        margin-left:20px ;
+    }
+    .logo select{
+        display: none !important;
+    }
+ .navbar .input-button{
+    display: none;
+ }   
+ .icon{
+    display: block !important;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+
+    border: 2px solid #a993fe;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white;
+ }
+ .hero{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ .hero .hero-image{
+     width: 90% !important;
+     height: 50vh;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+ }
+ .hero-text {
+    width: 100% !important;
+    margin: 0px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: left;
+}
+.hero-text h1{
+    width: 90%;
+    text-align: center;
+}
+.hero-text p{
+    width: 100%;
+}
+.hero-text .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: block !important;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transform: translateX(-100vw);
+    transition: all 0.3 ease-in-out;
+    opacity: 0;
+}
+ .container.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.sider-bar{
+    width: 80%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction:column ;
+    align-content: center;
+    text-align: center;
+}
+.input {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.input input{
+    width: 80%;
+    height: 45px;
+    border: 2px solid orange;
+    padding-left: 10px;
+    margin: 30px auto;
+    outline: none;
+    border-radius:5px;
+}
+.input .fas{
+    position: absolute;
+    cursor: pointer;
+    color:orange !important;
+    font-size: 20px;
+    top: 40px;
+    right:40px;
+}
+.sider-bar .sider-bar-heading{
+    display: block;
+margin-top:30px ;
+font-size: 25px;
+}
+.mobile-button{
+    width:80% ;
+    margin:20px auto ;
+    display: block;
+}
+.mobile-button button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color:orangered ;
+    color: white;
+}
+.mobile-button button:hover{
+    background: black;
+    color: orange;
+}
+.mobile-button .copyright{
+    margin-top:20px ;
+}
+.poster{
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+}
+.poster .fas{
+    font-size:25px ;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px;
+}
+.content .content-heading{
+    width:100%;
+    /* margin: 0px auto; */
+    font-size: 15px;
+    margin: 0 !important;
+    padding: 0;
+}
+.content-heading h1{
+    width: 100%;
+    /* margin: 0; */
+}
+.content .content-text{
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.content-text ol li{
+    width: 100%;
+    margin: 0;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+.course-button{
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.course-button button{
+    height: 40px;
+    margin: 3px;
+}
+.course-card{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+.card{
+    width: 90%;
+}
+.review{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.review-card{
+    width: 90%;
+    margin: 0px auto;
+}
+}
